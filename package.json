@@ -1,0 +1,26 @@
+{
+  "name": "randomnumber",
+  "version": "1.0.0",
+  "description": "RandomNumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GUAJEGUICHAN/RandomNumber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GUAJEGUICHAN/RandomNumber/issues"
+  },
+  "homepage": "https://github.com/GUAJEGUICHAN/RandomNumber#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.1"
+  }
+}
