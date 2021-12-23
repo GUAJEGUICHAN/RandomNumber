@@ -1,3 +1,6 @@
-test('test', () => {
-  expect(1 + 1).toBe(2);
-});
+// function Add(a, b) {
+//   return a + b;
+// }
+// test('test', () => {
+//   expect(Add(1, 2)).toBe(2);
+// });

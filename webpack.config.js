@@ -26,4 +26,11 @@ module.exports = {
       template: '/public/index.html',
     }),
   ],
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, 'src/components'),
+    },
+    extensions: ['.js', '.jsx'],
+  },
+
 };

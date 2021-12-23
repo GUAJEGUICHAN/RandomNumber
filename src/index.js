@@ -1,4 +1,10 @@
-console.log('✅');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
 
-const test = document.getElementById('id');
-test.innerHTML = 'Stop';
+ReactDOM.render(
+  <div>
+    <App />
+  </div>,
+  document.getElementById('id'),
+);
