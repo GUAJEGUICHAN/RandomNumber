@@ -5,14 +5,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)?$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: 'babel-loader',
       },
     ],
   },
-  mode: 'none',
-  entry: './src/index.js',
+  mode: 'development',
+  entry: './src/index.jsx',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -23,7 +23,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       // index.html 템플릿을 기반으로 빌드 결과물을 추가해줌
-      template: '/public/index.html',
+      template: './public/index.html',
     }),
   ],
   resolve: {
