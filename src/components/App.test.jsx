@@ -3,6 +3,6 @@ import { render } from '@testing-library/react';
 import App from './App';
 
 test('App', () => {
-  const { getByText } = render();
-  expect(getByText('App')).not.toBeNull();
+  const { getByText } = render(<App />);
+  expect(getByText('안녕')).not.toBeNull();
 });
