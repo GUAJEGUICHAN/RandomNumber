@@ -3,8 +3,8 @@ export function updateStartNumber(value) {
     type: 'updateStartNumber',
     payload: {
       inputStartNumber: value,
-    }
-  }
+    },
+  };
 }
 export function updateEndNumber(value) {
   return {
@@ -12,10 +12,10 @@ export function updateEndNumber(value) {
     payload: {
       inputEndNumber: value,
     },
-  }
+  };
 }
 export function setTheNumbers() {
   return {
     type: 'setTheNumbers',
-  }
+  };
 }

@@ -1,5 +1,5 @@
-import { setTheNumbers, updateEndNumber, updateStartNumber } from "./actions";
-import reducer from "./reducer"
+import { setTheNumbers, updateEndNumber, updateStartNumber } from './actions';
+import reducer from './reducer';
 
 describe('reducer', () => {
   it('updateStartNumber', () => {
@@ -14,9 +14,8 @@ describe('reducer', () => {
       inputEndNumber: undefined,
       startNumber: 0,
       endNumber: 0,
-    })
-
-  })
+    });
+  });
 
   it('updateEndtNumber', () => {
     const state = {
@@ -31,9 +30,8 @@ describe('reducer', () => {
       inputEndNumber: 100,
       startNumber: 0,
       endNumber: 0,
-    })
-
-  })
+    });
+  });
 
   it('setTheNumbers', () => {
     const state = {
@@ -43,11 +41,10 @@ describe('reducer', () => {
       endNumber: 0,
     };
     expect(reducer(state, setTheNumbers())).toStrictEqual({
-      inputStartNumber: "",
-      inputEndNumber: "",
+      inputStartNumber: '',
+      inputEndNumber: '',
       startNumber: 1,
       endNumber: 100,
-    })
-
-  })
-})
+    });
+  });
+});
