@@ -1,21 +1,19 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 import { setTheNumbers, updateEndNumber, updateStartNumber } from '../actions';
+
 export default function Main() {
   const dispatch = useDispatch();
 
   const {
     inputStartNumber,
     inputEndNumber,
-  } = useSelector((state) => {
-
-    return {
-      inputStartNumber: state.inputStartNumber,
-      inputEndNumber: state.inputEndNumber,
-    }
-  });
-  const navigate = useNavigate()
+  } = useSelector((state) => ({
+    inputStartNumber: state.inputStartNumber,
+    inputEndNumber: state.inputEndNumber,
+  }));
+  const navigate = useNavigate();
 
   function handleStartNumberChange(event) {
     dispatch(updateStartNumber(event.target.value));
@@ -25,9 +23,9 @@ export default function Main() {
   }
 
   function handleClickToSaveNumbers() {
-    if ((0 < inputEndNumber) && (0 < inputStartNumber) && inputStartNumber < inputEndNumber) {
+    if ((inputEndNumber > 0) && (inputStartNumber > 0) && inputStartNumber < inputEndNumber) {
       dispatch(setTheNumbers());
-      navigate('/R')
+      navigate('/R');
     }
   }
   return (
