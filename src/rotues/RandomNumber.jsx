@@ -75,7 +75,6 @@ export default function RandomNumber() {
       <div id="theNumberContainer">
         <TheNumber id="theNumber">
           <span>{theNumber === -1 ? '숫자를 모두 뽑았습니다!' : theNumber}</span>
-
         </TheNumber>
       </div>
       {/* <div id="selectedNumbers">
