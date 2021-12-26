@@ -5,8 +5,7 @@ import returnRandomNumber from '../returnRandomNumber';
 
 const TheNumber = styled.div`
   display:flex;
-background:#941F1F;
-color:#34502B
+
 justify-content: center;
 align-itemst:center;
   font-size:20rem;
