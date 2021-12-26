@@ -4,7 +4,12 @@ import styled from 'styled-components';
 import returnRandomNumber from '../returnRandomNumber';
 
 const TheNumber = styled.div`
-  font-size:100px;
+  display:flex;
+background:#941F1F;
+color:#34502B
+justify-content: center;
+align-itemst:center;
+  font-size:20rem;
 `;
 
 // interval = setInterval(function () {
@@ -58,7 +63,7 @@ export default function RandomNumber() {
     <div>
       <div id="menu">
         <button type="button" id="showTheNumber" onClick={showTheNumber}>숫자 뽑기</button>
-        <div>
+        {/* <div>
           시작 숫자
           {startNumber}
         </div>
@@ -66,16 +71,17 @@ export default function RandomNumber() {
           시작 숫자
           {endNumber}
         </div>
-        <button type="button" id="reset">리셋</button>
+        <button type="button" id="reset">리셋</button> */}
       </div>
       <div id="theNumberContainer">
         <TheNumber id="theNumber">
-          {theNumber === -1 ? '숫자를 모두 뽑았습니다!' : theNumber}
+          <span>{theNumber === -1 ? '숫자를 모두 뽑았습니다!' : theNumber}</span>
+
         </TheNumber>
       </div>
-      <div id="selectedNumbers">
+      {/* <div id="selectedNumbers">
         <span>1</span>
-      </div>
+      </div> */}
     </div>
   );
 }
