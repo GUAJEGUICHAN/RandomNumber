@@ -12,6 +12,8 @@ https://wizardly-bhabha-f2163e.netlify.app/
 ## 특징
  - 리액트/리덕스로 구현
  - scss 조금 사용
+ - 음수 불가능
+ - 시작 숫자가 끝 숫자보다 클 수 없음
 
 ## 사용방법
 
@@ -19,4 +21,4 @@ https://wizardly-bhabha-f2163e.netlify.app/
 
 ## 문제점
 
- - setState가 비동기적으로 이뤄져서 중복된 숫자가 나올 때가 있다. 
+ - 원래 중복안뜨게 설계했지만 setState가 비동기적으로 이뤄져서 중복된 숫자가 나올 때가 있다...
