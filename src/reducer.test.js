@@ -17,7 +17,7 @@ describe('reducer', () => {
     });
   });
 
-  it('updateEndtNumber', () => {
+  it('updateEndNumber', () => {
     const state = {
       inputStartNumber: undefined,
       inputEndNumber: undefined,

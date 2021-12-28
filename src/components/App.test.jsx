@@ -6,7 +6,7 @@ import App from './App';
 jest.mock('react-redux');
 
 test('render App', () => {
-  const { getByText, getByDisplayValue, getByPlaceholderText } = render(<App />);
+  const { getByText, getByPlaceholderText } = render(<App />);
   expect(getByText('이룸청년 어른이들을 위한 크리스마스 선물')).not.toBeNull();
   expect(getByPlaceholderText('시작 숫자 입력')).not.toBeNull();
   expect(getByPlaceholderText('끝 숫자 입력')).not.toBeNull();

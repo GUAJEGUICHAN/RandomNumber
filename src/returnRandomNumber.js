@@ -1,6 +1,4 @@
 export default function returnRandomNumber(start, end, selectedNumbers) {
-  // console.log("현재 배열 길이 : ", selectedNumbers.length)
-  // console.log("받을 수 있는 배열 길이 : ", (end - start))
   if (selectedNumbers.length === (end - start)) {
     return -1;
   }

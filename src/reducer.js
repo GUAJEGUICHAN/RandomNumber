@@ -5,6 +5,7 @@ const initialState = {
   endNumber: 0,
   selectedNumbers: [],
 };
+
 export default function reducer(state = initialState, action) {
   if (action.type === 'setTheNumbers') {
     return {
@@ -30,10 +31,9 @@ export default function reducer(state = initialState, action) {
   }
 
   if (action.type === 'addSelectedNumbers') {
-    state.selectedNumbers.push(action.payload.theNumber);
-    console.log('현재 selectedNumbers 현황', state.selectedNumbers);
     return {
       ...state,
+      selectedNumbers: [...selectedNumbers, action.payload.theNumber]
     };
   }
   return state;
